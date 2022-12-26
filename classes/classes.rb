@@ -1,6 +1,11 @@
 class Person
-    def initialize
+    def initialize(given_name = "John Doe")
+        @name = given_name
         puts "Initializing..."
+    end
+
+    def say_name 
+        puts @name
     end
 
     def speak(name)
@@ -46,3 +51,6 @@ end
 
 me = Person.new
 puts me.speak("Henrique")
+
+henrique = Person.new("Henrique")
+henrique.say_name
