@@ -37,3 +37,12 @@ second = Person.new
 puts "Second: ", second.object_id
 puts first.getClassId
 puts second.getClassId
+
+class Person
+    def speak(name)
+        "Hello World, my name is: #{name} (rebuild)"
+    end
+end
+
+me = Person.new
+puts me.speak("Henrique")
